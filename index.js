@@ -78,7 +78,7 @@ function fetchWeatherData() {
                 app.style.backgroundImage = `url(./${timeOfDay}/weather.avif)`;
                 btn.style.background = timeOfDay === "day" ? "#fa6d1b" : "#181e27";
             } else if ([ 1063, 1150, 1180, 1183, 1186, 1192, 1240, 1243, 1246].includes(code)) {
-                app.style.backgroundImage = `url(.${timeOfDay}/rainys.jpg)`;
+                app.style.backgroundImage = `url(./${timeOfDay}/rainys.jpg)`;
                 btn.style.background = timeOfDay === "day" ? "#647d75" : "#325c80";
 
             
@@ -97,4 +97,4 @@ function fetchWeatherData() {
 }
 
 fetchWeatherData();
-app.style.opacity = "1";
+
