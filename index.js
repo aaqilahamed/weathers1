@@ -56,7 +56,7 @@ function fetchWeatherData() {
             timeOutput.innerHTML = time;
 
             nameOutput.innerHTML = data.location.name;
-            icon.src = "https:" + data.current.condition.icon;
+            icon.src = `https:${data.current.condition.icon}`;
 
             cloudOutput.innerHTML = data.current.cloud + "%";
             humidityOutput.innerHTML = data.current.humidity + "%";
