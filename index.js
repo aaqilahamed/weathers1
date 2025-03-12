@@ -57,9 +57,7 @@ function fetchWeatherData() {
 
             nameOutput.innerHTML = data.location.name;
             icon.src = `https:${data.current.condition.icon}`;
-            icon.onerror = () => {
-            icon.src = './weather.avif'; 
-             };
+           
 
 
             cloudOutput.innerHTML = data.current.cloud + "%";
